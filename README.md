@@ -32,12 +32,6 @@ This line-bot is for the LINE TECH FRESH 2021 intern, which assigns me to promot
 5. motivation
 6. self introduction video
 
-# Rich Menu / User Mode
- _____________________________
-| _ (3) _ | _ (2) _ | _ (4) _ |
-| _ (5) _ | _ (1) _ | _ (6) _ |
-| ________ rich menu ________ |
-
 # Reference
 1. [LINE line-bot-sdk-python](https://line-bot-sdk-python.readthedocs.io/en/stable/linebot.models.html?highlight=flexsend#linebot.models.flex_message.FlexSendMessage)
 
