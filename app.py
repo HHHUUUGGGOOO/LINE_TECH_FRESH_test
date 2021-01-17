@@ -76,6 +76,17 @@ def handle_message(event):
     
     line_bot_api.reply_message(event.reply_token, text_message(users[line_id], event.message.text))
 
+# Follow
+@handler.add(FollowEvent)
+def handle_follow_event(event):
+    global users
+
+    line_id = event.source.user_id
+    if line_id not in users.keys():
+        users[line_id] = User(line_id)
+    
+    line_bot_api.reply_message(event.reply_token, follow_event_message(users[line_id]))
+
 # Unfollow
 @handler.add(UnfollowEvent)
 def handle_unfollow_event(event):
