@@ -23,7 +23,33 @@ from carousel import quick_reply, skill, experience, course
 #############################################################################
 # Handle message
 def text_message(user: User, msg: str):
-    return TextSendMessage(text='你好嘻嘻~ (text message)')
+    # First you need to finish the self introduction video
+    if user.tutorial_step < 1 and msg != 'Finish！':
+        return TextSendMessage(text='Please click \"Finish！\" to start！', quick_reply=quick_reply.get_quick_reply(['Finish！']))
+    # Finish the video
+    if (msg == 'Finish！'):
+        user.tutorial_step = 1
+        messages = list()
+        messages.append(TextSendMessage(text='Nice to meet you！What part of me do you wanna know more！😇', quick_reply=quick_reply.get_quick_reply(['contact', 'skill','experience', 'course', 'motivation']))))
+        return messages
+    # Contact
+    if msg == "contact":
+        user.mode = 1
+    # Skill
+    elif msg == "skill":
+        user.mode = 2
+    # Experience
+    elif msg == "experience":
+        user.mode = 3
+    # Course
+    elif msg == "course":
+        user.mode = 4
+    # Motivation
+    if msg == "motivation":
+        user.mode = 5
+    # Introduction Video
+    if msg == "intro video":
+        user.mode = 6
 
 # Follow event
 def follow_event_message(user: User):
