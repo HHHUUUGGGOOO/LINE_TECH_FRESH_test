@@ -45,7 +45,7 @@ def text_message(user: User, msg: str):
         return messages
     # Contact  
     if msg.lower() == "contact":
-        user.mode = 1
+        user.mode = 1  
         return FlexSendMessage(alt_text="contact me", contents=contact.contact_me())
     # Skill
     elif msg.lower() == "skill":
