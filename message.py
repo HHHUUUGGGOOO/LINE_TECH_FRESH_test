@@ -30,7 +30,7 @@ def text_message(user: User, msg: str):
     if (msg == 'Finish！'):
         user.tutorial_step = 1
         messages = list()
-        messages.append(TextSendMessage(text='Nice to meet you！What part of me do you wanna know more！😇', quick_reply=quick_reply.get_quick_reply(['contact', 'skill','experience', 'course', 'motivation']))))
+        messages.append(TextSendMessage(text='Nice to meet you！What part of me do you wanna know more！😇', quick_reply=quick_reply.get_quick_reply(['contact', 'skill','experience', 'course', 'motivation'])))
         return messages
     # Motivation's 4 stages
     if msg.lower() in ['begin', 'rookie in cardbo', 'engineer in cardbo', 'target']:
