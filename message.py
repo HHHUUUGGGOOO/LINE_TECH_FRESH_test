@@ -12,7 +12,7 @@
 # python kits
 from linebot.models import (
   TextSendMessage, FlexSendMessage, TemplateSendMessage, 
-  ButtonsTemplate, URITemplateAction, VideoSendMessage
+  ButtonsTemplate, URITemplateAction, VideoSendMessage, ImageSendMessage
 )
 # files
 from user import User
