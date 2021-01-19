@@ -22,7 +22,7 @@ from linebot.models import (
   FollowEvent, UnfollowEvent
 )
 # files
-from config import token
+from token_file import token
 from user import User
 from message import text_message, follow_event_message
 
