@@ -1,5 +1,6 @@
-line-bot-sdk
-flask
+Flask==1.1.1
+gunicorn==19.9.0
+line-bot-sdk==1.14.0
 dnspython
 pickledb
 requests
