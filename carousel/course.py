@@ -23,38 +23,22 @@ from linebot.models import (
 #############################################################################
 # [[修課學期, 教授照片, 課程名稱, 教授名字, C++], ...]
 # C++
-pic_1 = 'https://i.imgur.com/wB4QE0K.jpg'
-alg = ['大三下', pic_1, 'Algorithm', 'Prof. 張耀文', 'C++']
-
-pic_2 = 'https://i.imgur.com/Om1trmj.jpg'
-EDA = ['大二下', pic_2, 'Intro of EDA', 'Prof. 江介宏', 'C++']
-
-pic_3 = 'https://i.imgur.com/JySOygr.png'
-DsnP = ['大二上', pic_3, 'DSnP', 'Prof. 黃鍾揚', 'C++']
-
-pic_4 = 'https://i.imgur.com/Vk2sEUc.jpg'
-CS = ['大一下', pic_4, 'Intro of Computer Science', 'Prof. 于天立', 'C++']
+alg = ['大三下', 'https://i.imgur.com/wB4QE0K.jpg', 'Algorithm', 'Prof. 張耀文', 'C++']
+EDA = ['大二下', 'https://i.imgur.com/Om1trmj.jpg', 'Intro of EDA', 'Prof. 江介宏', 'C++']
+DsnP = ['大二上', 'https://i.imgur.com/JySOygr.png', 'DSnP', 'Prof. 黃鍾揚', 'C++']
+CS = ['大一下', 'https://i.imgur.com/Vk2sEUc.jpg', 'Intro of Computer Science', 'Prof. 于天立', 'C++']
 
 # Python
-pic_5 = 'https://i.imgur.com/GIskEyS.jpg'
-ML = ['預計大三下', pic_5, 'Machine Learning', 'Prof. 李宏毅', 'Python']
-
-pic_6 = 'https://i.imgur.com/KulysSR.jpg'
-Data_Structure = ['大三上', pic_6, 'Data Structure', 'Prof. 顏嗣鈞', 'Python']
-
-pic_7 = 'https://i.imgur.com/GIskEyS.jpg'
-Linear_Alg = ['大二上', pic_7, 'Linear Algebra', 'Prof. 李宏毅', 'Python']
-
-pic_8 = 'https://i.imgur.com/mbBpwa4.jpg'
-Programming = ['大一上', pic_8, 'Computer Programming', 'Prof. 林宗男', 'Python']
+ML = ['預計大三下', 'https://i.imgur.com/GIskEyS.jpg', 'Machine Learning', 'Prof. 李宏毅', 'Python']
+Data_Structure = ['大三上', 'https://i.imgur.com/KulysSR.jpg', 'Data Structure', 'Prof. 顏嗣鈞', 'Python']
+Linear_Alg = ['大二上', 'https://i.imgur.com/GIskEyS.jpg', 'Linear Algebra', 'Prof. 李宏毅', 'Python']
+Programming = ['大一上', 'https://i.imgur.com/mbBpwa4.jpg', 'Computer Programming', 'Prof. 林宗男', 'Python']
 
 # Theoretics
-pic_9 = 'https://i.imgur.com/Blwsf9z.jpg'
-Game_Theory = ['大一下', pic_9, 'Game Theory', 'Prof. 呂學一', 'Theoretics']
+Game_Theory = ['大一下', 'https://i.imgur.com/Blwsf9z.jpg', 'Game Theory', 'Prof. 呂學一', 'Theoretics']
 
 # NTU Presentation
-pic_10 = 'https://i.imgur.com/AFq9HgX.jpg'
-Presentation = ['大一上', pic_10, 'NTU Presentation', 'Prof. 葉丙成', 'Practical']
+Presentation = ['大一上', 'https://i.imgur.com/AFq9HgX.jpg', 'NTU Presentation', 'Prof. 葉丙成', 'Practical']
 
 data = [alg, EDA, DsnP, CS, ML, Data_Structure, Linear_Alg, Programming, Game_Theory, Presentation]
 

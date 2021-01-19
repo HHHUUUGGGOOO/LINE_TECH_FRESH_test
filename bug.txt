@@ -4,5 +4,4 @@
 4. Skill:
 5. Course:
 6. Motivation: pass~
-7. Contact:
-8. Self Intro:
+7. Contact: pass~
