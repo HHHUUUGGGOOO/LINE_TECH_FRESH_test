@@ -43,7 +43,7 @@ def text_message(user: User, msg: str):
             quick_reply=quick_reply.get_quick_reply(['Begin', 'Rookie in Cardbo', 'Engineer in Cardbo', 'Target'])
         )) 
         return messages
-    # Contact
+    # Contact  
     if msg.lower() == "contact":
         user.mode = 1
         return FlexSendMessage(alt_text="contact me", contents=contact.contact_me())
