@@ -50,7 +50,6 @@ def get_course_carousel():
     bubble = list()
     for courses in data:
         bubble.append(my_course(courses))
-    print("debug: ", bubble[0])
 
 def my_course(my_class: list):
     # [[修課學期, 教授照片, 課程名稱, 教授名字, C++], ...]
@@ -147,6 +146,20 @@ def my_course(my_class: list):
                             ]
                         )
                     ]
+                )
+            ]
+        ),
+        footer=BoxComponent(
+            layout='vertical',
+            padding_all='none',
+            background_color='#F8F8F8',
+            contents=[
+                ButtonComponent(
+                    color='#097AC5',
+                    action=URIAction(
+                        label='Github',
+                        uri='https://github.com/HHHUUUGGGOOO'
+                    )
                 )
             ]
         )
