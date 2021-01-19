@@ -62,6 +62,7 @@ def get_exp_carousel():
     bubble = list()
     for exp in exp_data:
         bubble.append(my_experience(exp))
+    return bubble
 
 def my_experience(exp: list):
     # [該活動照片url, 該活動名字, 該活動我的頭銜, 該活動頭銜時間]
