@@ -49,7 +49,7 @@ def get_course_carousel():
     global data, alg, EDA, DsnP, CS, ML, Data_Structure, Linear_Alg, Programming, Game_Theory, Presentation
     bubble = list()
     for courses in data:
-        print("courses": courses)
+        print("courses: ", courses)
         bubble.append(my_course(courses))
 
 def my_course(my_class: list):
