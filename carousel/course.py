@@ -141,7 +141,7 @@ def my_course(my_class: list):
                             contents=[
                                 TextComponent(
                                     text=my_class[4],
-                                    align='start',
+                                    align='center',
                                     color='#222E38',
                                     size='xl',
                                     weight='bold'

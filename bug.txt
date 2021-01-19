@@ -1,8 +1,8 @@
 1. Follow event: greeting message 影片打不開
 2. Self Intro: 影片打不開
 3. Experience:
-4. Skill:
-5. Course: non empty?
+4. Skill: 演算法作業git上去
+5. Course: 
 6. Motivation: pass~
 7. Contact: pass~
 
