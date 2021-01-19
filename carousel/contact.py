@@ -76,7 +76,7 @@ def contact_me():
                     layout='vertical',
                     contents=[
                         ImageComponent(
-                            url='https://storage.googleapis.com/cardbo-images/linebot/tutorial-setting-cover.jpg',
+                            url='https://i.imgur.com/91v54MO.jpg',
                             size='full',
                             aspect_mode='cover',
                             aspect_ratio='4:3',

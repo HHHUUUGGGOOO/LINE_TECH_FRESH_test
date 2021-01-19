@@ -23,9 +23,9 @@ from linebot.models import (
 #############################################################################
 # [python logo, 'Python', 'Project name', 'course', github link]
 category = ['python', 'c++', 'matlab']
-py_logo = ''
-c_logo = ''
-matlab_logo = ''
+py_logo = 'https://i.imgur.com/mDd4HGq.jpg'
+c_logo = 'https://i.imgur.com/gtJYuvD.png'
+matlab_logo = 'https://i.imgur.com/XhH3OQt.png'
 
 # Python
 CS_PA = [py_logo, 'Python', 'Snake AI', 'Computer Science', '']
@@ -146,3 +146,6 @@ def my_skill(cat: list):
             ]
         )
     )
+
+
+

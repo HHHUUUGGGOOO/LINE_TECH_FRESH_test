@@ -31,12 +31,12 @@ def text_stage(stage: str):
 def image_stage(stage: str):
   url = ''
   if stage == 'begin':
-    url = ''
+    url = 'https://i.imgur.com/MtPGElS.jpg'
   if stage == 'rookie in cardbo':
-    url = ''
+    url = 'https://i.imgur.com/1O7KpqE.jpg'
   if stage == 'engineer in cardbo':
-    url = ''
+    url = 'https://i.imgur.com/zuf84NF.jpg'
   if stage == 'target':
-    url = ''
+    url = 'https://i.imgur.com/ZLcQ8PU.jpg'
   
   return url
