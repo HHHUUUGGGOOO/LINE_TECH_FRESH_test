@@ -94,7 +94,7 @@ def my_skill(cat: list):
                             color='#097AC5',
                             offset_bottom='md',
                             action=URIAction(
-                                label='github link',
+                                label='github',
                                 uri=detail[4]
                             )
                         )
