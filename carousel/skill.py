@@ -49,13 +49,16 @@ Quantum_PA = [matlab_logo, 'MATLAB', 'QIA', 'Communication System', 'https://git
 def get_skill_carousel():
     global category, py_logo, c_logo, matlab_logo, CS_PA, vpy_PA, Data_Structure_PA, DSnP_PA, EDA_PA, Alg_PA, Quantum_PA
     bubble = list()
-    info = [CS_PA, vpy_PA, Data_Structure_PA, DSnP_PA, EDA_PA, Alg_PA, Quantum_PA]
+    py = [CS_PA, vpy_PA, Data_Structure_PA]
+    c = [DSnP_PA, EDA_PA, Alg_PA]
+    mat = [Quantum_PA]
+    info = [py, c, mat]
     for cat in info:
         bubble.append(my_skill(cat))
 
 def my_skill(cat: list):
-    # [python logo, 'Python', 'Project name', 'course', github link]
-    for detail in info:
+    # [[python logo, 'Python', 'Project name', 'course', github link], ...]
+    for detail in cat:
         skill_contents.append(BoxComponent(
             layout='horizontal',
             padding_start='xxl',
@@ -67,13 +70,13 @@ def my_skill(cat: list):
                     layout='vertical',
                     contents=[
                         TextComponent(
-                            text=cat[2],
+                            text=detail[2],
                             size='md',
                             color='#222E38',
                             weight='bold'
                         ),
                         TextComponent(
-                            text=cat[3],
+                            text=detail[3],
                             size='xs',
                             color='#6A7E8D'
                         )
@@ -88,7 +91,7 @@ def my_skill(cat: list):
                             offset_bottom='md',
                             action=URIAction(
                                 label='github link',
-                                url=cat[4]
+                                uri=detail[4]
                             )
                         )
                     ]
@@ -104,7 +107,7 @@ def my_skill(cat: list):
                     layout='vertical',
                     contents=[
                         ImageComponent(
-                            url=cat[0],
+                            url=detail[0],
                             size='full',
                             aspect_mode='cover',
                             aspect_ratio='4:3',
@@ -126,7 +129,7 @@ def my_skill(cat: list):
                             padding_end='xxl',
                             contents=[
                                 TextComponent(
-                                    text=cat[1],
+                                    text=detail[1],
                                     wrap=True,
                                     color='#FFFFFF',
                                     align='center',
