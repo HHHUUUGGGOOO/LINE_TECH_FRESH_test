@@ -3,3 +3,7 @@ flask
 dnspython
 pickledb
 requests
+pymongo
+pymongo[srv]
+pyyaml
+multiprocess
