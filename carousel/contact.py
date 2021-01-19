@@ -82,6 +82,7 @@ def contact_me():
                             aspect_ratio='4:3',
                             gravity='center'
                         )
+                    ]
                 ),
                 BoxComponent(
                     layout='vertical',
