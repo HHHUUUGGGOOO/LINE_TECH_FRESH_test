@@ -28,17 +28,17 @@ c_logo = 'https://i.imgur.com/gtJYuvD.png'
 matlab_logo = 'https://i.imgur.com/XhH3OQt.png'
 
 # Python
-CS_PA = [py_logo, 'Python', 'Snake AI', 'Computer Science', '']
-vpy_PA = [py_logo, 'Python', 'Baseball Path Simulation', 'Physics', '']
-Data_Structure_PA = [py_logo, 'Python', 'Page Rank / Hash', 'Dara Structure', '']
+CS_PA = [py_logo, 'Python', 'Snake AI', 'Computer Science', 'https://github.com/HHHUUUGGGOOO/Intro-of-Computer-Science.git']
+vpy_PA = [py_logo, 'Python', 'Baseball Path Simulation', 'Physics', 'https://github.com/HHHUUUGGGOOO/Phisics_vpython.git']
+Data_Structure_PA = [py_logo, 'Python', 'Page Rank / Hash', 'Dara Structure', 'https://github.com/HHHUUUGGGOOO/Data-Structure.git']
 
 # C++
-DSnP_PA = [c_logo, 'C++', 'Fraig', 'DSnP', '']
-EDA_PA = [c_logo, 'C++', 'X-Value Equivalence', 'Intro of EDA', '']
-Alg_PA = [c_logo, 'C++', 'Cycle Removal', 'Algorithm', '']
+DSnP_PA = [c_logo, 'C++', 'Fraig', 'DSnP', 'https://github.com/HHHUUUGGGOOO/DSnP.git']
+EDA_PA = [c_logo, 'C++', 'X-Value Equivalence', 'Intro of EDA', 'https://github.com/HHHUUUGGGOOO/Intro-of-EDA.git']
+Alg_PA = [c_logo, 'C++', 'Cycle Removal', 'Algorithm', 'https://github.com/HHHUUUGGGOOO/Algorithm.git']
 
 # MATLAB
-Quantum_PA = [matlab_logo, 'MATLAB', 'QIA', 'Communication System', '']
+Quantum_PA = [matlab_logo, 'MATLAB', 'QIA', 'Communication System', 'https://github.com/HHHUUUGGGOOO/Communication-System.git']
 
 #############################################################################
 #                                function                                   #
