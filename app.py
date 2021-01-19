@@ -117,4 +117,12 @@ def clean_user_cache():
 #                                 execute                                   #
 #############################################################################
 if __name__ == "__main__":
-  app.run()
+    # port = int(os.environ.get('PORT', 80))
+    port = int(os.environ.get('PORT', 80))   
+
+    # app.run(host='0.0.0.0', port=port)
+    AppRun = Process(target=app.run, kwargs=dict(host='0.0.0.0', port=port, threaded=True))
+    RCC = Process(target=RegularGetTokenAndCleanCache, kwargs=dict(account=account, sec = 600))
+    AppRun.start(); RCC.start()
+    # AppRun.join()
+    RCC.join()#直到RCC執行完後，AppRun才會去執行下一次，但RCC永遠不會執行完^^
