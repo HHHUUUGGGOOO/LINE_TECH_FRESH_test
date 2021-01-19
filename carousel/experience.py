@@ -23,22 +23,22 @@ from linebot.models import (
 #############################################################################
 # [該活動照片url, 該活動名字, 該活動我的頭銜, 該活動頭銜時間]
 # 2020 卡伯團隊一員
-cardbo_2020 = ['https://i.imgur.com/zuf84NF.jpg', 'Cardbo Team', 'Engineer', 'Aug,2020 - now']
+cardbo_2020 = ['https://i.imgur.com/zuf84NF.jpg', 'Cardbo Team', 'Engineer', 'Aug, 2020 - now']
 
 # 2020 宿營總召
-EE_camp = ['https://i.imgur.com/v8LzMeF.jpg', 'NTUEE Orientation Camp', 'Event General Coordinator', 'Aug,2020']
+EE_camp = ['https://i.imgur.com/v8LzMeF.jpg', 'NTUEE Orientation Camp', 'Event General Coordinator', 'Aug, 2020']
 
 # 2020 GIS國際部部員
-GIS_2020 = ['https://i.imgur.com/Hg4dn92.jpg', 'GIS Taiwan 2020', 'Officer of Delegate Affairs', 'Oct,2019 - now']
+GIS_2020 = ['https://i.imgur.com/Hg4dn92.jpg', 'GIS Taiwan 2020', 'Officer of Delegate Affairs', 'Oct, 2019 - now']
 
 # 2020 ATCC參賽
-ATCC_2020 = ['https://i.imgur.com/MtPGElS.jpg', 'ATCC commercial contest', 'Team Member', 'May,2020']
+ATCC_2020 = ['https://i.imgur.com/MtPGElS.jpg', 'ATCC commercial contest', 'Team Member', 'May, 2020']
 
 # 2018 台大簡報大賽第10名
-Presentation_2018 = ['https://i.imgur.com/3davbUK.jpg', 'NTU Presentation Contest', '10-th place', 'Dec,2018']
+Presentation_2018 = ['https://i.imgur.com/3davbUK.jpg', 'NTU Presentation Contest', '10-th place', 'Dec, 2018']
 
 # 2018 NASA營隊 project manager
-NASA_2018 = ['https://i.imgur.com/ETXtkqM.jpg', 'HASSE NASA Camp', 'Project Manager', 'Jul,2018']
+NASA_2018 = ['https://i.imgur.com/ETXtkqM.jpg', 'HASSE NASA Camp', 'Project Manager', 'Jul, 2018']
 
 exp_data = [cardbo_2020, EE_camp, GIS_2020, ATCC_2020, Presentation_2018, NASA_2018]
 
