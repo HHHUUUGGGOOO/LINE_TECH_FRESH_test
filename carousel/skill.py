@@ -55,7 +55,9 @@ def get_skill_carousel():
     info = [py, c, mat]
     for cat in info:
         bubble.append(my_skill(cat))
-    return bubble
+    return CarouselContainer(
+        contents=bubble 
+    )
 
 def my_skill(cat: list):
     # [[python logo, 'Python', 'Project name', 'course', github link], ...]

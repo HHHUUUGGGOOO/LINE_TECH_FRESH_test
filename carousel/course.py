@@ -50,7 +50,9 @@ def get_course_carousel():
     bubble = list()
     for courses in data:
         bubble.append(my_course(courses))
-    return bubble
+    return CarouselContainer(
+        contents=bubble
+    )
 
 def my_course(my_class: list):
     # [[修課學期, 教授照片, 課程名稱, 教授名字, C++], ...]
