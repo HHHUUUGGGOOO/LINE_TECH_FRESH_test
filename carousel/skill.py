@@ -110,6 +110,7 @@ def my_skill(cat: list):
                             aspect_ratio='4:3',
                             gravity='center'
                         )
+                    ]
                 ),
                 BoxComponent(
                     layout='vertical',
