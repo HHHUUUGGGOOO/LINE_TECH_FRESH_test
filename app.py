@@ -12,6 +12,7 @@
 # python kits
 import os
 import time
+from multiprocessing import Process, Manager
 from datetime import datetime, timedelta
 from flask import Flask, request, abort
 from message import text_message, follow_event_message
