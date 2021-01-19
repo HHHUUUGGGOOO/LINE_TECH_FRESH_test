@@ -58,6 +58,7 @@ def get_skill_carousel():
 
 def my_skill(cat: list):
     # [[python logo, 'Python', 'Project name', 'course', github link], ...]
+    skill_contents = list()
     for detail in cat:
         skill_contents.append(BoxComponent(
             layout='horizontal',
