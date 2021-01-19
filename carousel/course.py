@@ -9,3 +9,160 @@
 #############################################################################
 #                                 import                                    #
 #############################################################################
+# python kits
+import json
+from linebot.models import (
+  CarouselContainer, BubbleContainer, BoxComponent, 
+  TextComponent, ButtonComponent, IconComponent,
+  MessageAction, ImageComponent, URIAction, 
+  LinearGradientBackground, FillerComponent, SeparatorComponent
+)
+
+#############################################################################
+#                                parameter                                  #
+#############################################################################
+# [[修課學期, 教授照片, 課程名稱, 教授名字, C++], ...]
+# C++
+pic_1 = 'https://storage.googleapis.com/cardbo-images/linebot/tutorial-setting-cover.jpg'
+alg = ['大三下', pic_1, 'Algorithm', 'Prof. 張耀文', 'C++']
+
+pic_2 = 'https://storage.googleapis.com/cardbo-images/linebot/tutorial-setting-cover.jpg'
+EDA = ['大二下', pic_2, 'Intro of EDA', 'Prof. 江介宏', 'C++']
+
+pic_3 = 'https://storage.googleapis.com/cardbo-images/linebot/tutorial-setting-cover.jpg'
+DsnP = ['大二上', pic_3, 'DSnP', 'Prof. 黃鍾揚', 'C++']
+
+pic_4 = 'https://storage.googleapis.com/cardbo-images/linebot/tutorial-setting-cover.jpg'
+CS = ['大一下', pic_4, 'Intro of Computer Science', 'Prof. 于天立', 'C++']
+
+# Python
+pic_5 = 'https://storage.googleapis.com/cardbo-images/linebot/tutorial-setting-cover.jpg'
+ML = ['預計大三下', pic_5, 'Machine Learning', 'Prof. 李宏毅', 'Python']
+
+pic_6 = 'https://storage.googleapis.com/cardbo-images/linebot/tutorial-setting-cover.jpg'
+Data_Structure = ['大三上', pic_6, 'Data Structure', 'Prof. 顏嗣鈞', 'Python']
+
+pic_7 = 'https://storage.googleapis.com/cardbo-images/linebot/tutorial-setting-cover.jpg'
+Linear_Alg = ['大二上', pic_7, 'Linear Algebra', 'Prof. 李宏毅', 'Python']
+
+pic_8 = 'https://storage.googleapis.com/cardbo-images/linebot/tutorial-setting-cover.jpg'
+Programming = ['大一上', pic_8, 'Computer Programming', 'Prof. 林宗男', 'Python']
+
+# Theoretics
+pic_9 = 'https://storage.googleapis.com/cardbo-images/linebot/tutorial-setting-cover.jpg'
+Game_Theory = ['大一下', pic_9, 'Game Theory', 'Prof. 呂學一', 'Theoretics']
+
+# NTU Presentation
+pic_10 = 'https://storage.googleapis.com/cardbo-images/linebot/tutorial-setting-cover.jpg'
+Presentation = ['大一上', pic_10, 'NTU Presentation', 'Prof. 葉丙成', 'Practical']
+
+data = [alg, EDA, DsnP, CS, ML, Data_Structure, Linear_Alg, Programming, Game_Theory, Presentation]
+
+#############################################################################
+#                                function                                   #
+#############################################################################
+def get_course_carousel():
+    global data, alg, EDA, DsnP, CS, ML, Data_Structure, Linear_Alg, Programming, Game_Theory, Presentation
+    bubble = list()
+    for courses in data:
+        bubble.append(my_course(courses))
+
+def my_course(my_class: list):
+    # [[修課學期, 教授照片, 課程名稱, 教授名字, C++], ...]
+    return BubbleContainer(
+        size='mega',
+        header=BoxComponent(
+            layout='vertical',
+            padding_all='xl',
+            padding_bottom='none',
+            background_color='#f8f8f8',
+            contents=[
+                BoxComponent(
+                    layout='horizontal',
+                    spacing='none',
+                    margin='none',
+                    padding_top='md',
+                    contents=[
+                        TextComponent(
+                            size='xxl',
+                            gravity='center',
+                            text=my_class[0],
+                            align='start',
+                            color='#495057',
+                        )
+                    ]
+                )
+            ]
+        ),
+        body=BoxComponent(
+            layout='vertical',
+            padding_top='none',
+            background_color='#f8f8f8',
+            contents=[
+                BoxComponent(
+                    layout='vertical',
+                    padding_all='md',
+                    background_color='#f8f8f8',
+                    contents=[
+                        BoxComponent(
+                            layout='horizontal',
+                            padding_all='md',
+                            background_color='#f8f8f8',
+                            contents=[
+                                ImageComponent(
+                                    url=my_class[1],
+                                    size='4xl',
+                                    aspect_mode='fit',
+                                    aspect_ratio='8:5'
+                                )
+                            ]
+                        ),
+                        BoxComponent(
+                            layout='vertical',
+                            padding_top='md',
+                            padding_bottom='md',
+                            contents=[
+                                BoxComponent(
+                                    layout='horizontal',
+                                    contents=[
+                                        TextComponent(
+                                            text=my_class[2],
+                                            style='normal',
+                                            size='lg',
+                                            color='#222E38',
+                                            wrap=False
+                                        )
+                                    ]
+                                ),
+                                BoxComponent(
+                                    layout='horizontal',
+                                    contents=[
+                                        TextComponent(
+                                            text=my_class[3],
+                                            style='normal',
+                                            size='sm',
+                                            color='#6A7E8D'
+                                        )
+                                    ]   
+                                )
+                            ]
+                        ),
+                        BoxComponent(
+                            layout='vertical',
+                            padding_top='md',
+                            spacing='lg',
+                            contents=[
+                                TextComponent(
+                                    text=my_class[4],
+                                    align='start',
+                                    color='#222E38',
+                                    size='xl',
+                                    weight='bold'
+                                )
+                            ]
+                        )
+                    ]
+                )
+            ]
+        )
+    )

@@ -6,6 +6,7 @@ This line-bot is for the LINE TECH FRESH 2021 intern, which assigns me to promot
 - rich_menu
 - videosendmessage (follow event, self introduction)
 - flexmessage (bubble / carousel), textsendmessage
+- account link
 
 # Files
 ## carousel
@@ -13,6 +14,7 @@ This line-bot is for the LINE TECH FRESH 2021 intern, which assigns me to promot
 - skill.py
 - experience.py
 - course.py
+- motivation.py
 
 ## app.py
 

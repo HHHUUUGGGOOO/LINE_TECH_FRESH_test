@@ -1,7 +1,7 @@
 #############################################################################
-# FileName     [ skill.py ]
+# FileName     [ contact.py ]
 # PackageName  [ carousel ]
-# Synopsis     [ handle skill's bubble container ]
+# Synopsis     [ my contact way ]
 # Author       [ Meng-Hung (Hugo), Chen ]
 # Copyright    [ Copyleft(c) 2021 ]
 #############################################################################
@@ -19,44 +19,16 @@ from linebot.models import (
 )
 
 #############################################################################
-#                                parameter                                  #
-#############################################################################
-# [python logo, 'Python', 'Project name', 'course', github link]
-category = ['python', 'c++', 'matlab']
-py_logo = ''
-c_logo = ''
-matlab_logo = ''
-
-# Python
-CS_PA = [py_logo, 'Python', 'Snake AI', 'Computer Science', '']
-vpy_PA = [py_logo, 'Python', 'Baseball Path Simulation', 'Physics', '']
-Data_Structure_PA = [py_logo, 'Python', 'Page Rank / Hash', 'Dara Structure', '']
-
-# C++
-DSnP_PA = [c_logo, 'C++', 'Fraig', 'DSnP', '']
-EDA_PA = [c_logo, 'C++', 'X-Value Equivalence', 'Intro of EDA', '']
-Alg_PA = [c_logo, 'C++', 'Cycle Removal', 'Algorithm', '']
-
-# MATLAB
-Quantum_PA = [matlab_logo, 'MATLAB', 'QIA', 'Communication System', '']
-
-#############################################################################
 #                                function                                   #
 #############################################################################
-# Python --> 計概作業 / 普物vpython final / 資結PA
-# C++ --> DSnP / EDA final / 演算法PA
-# MATLAB --> 通信
-def get_skill_carousel():
-    global category, py_logo, c_logo, matlab_logo, CS_PA, vpy_PA, Data_Structure_PA, DSnP_PA, EDA_PA, Alg_PA, Quantum_PA
-    bubble = list()
-    info = [CS_PA, vpy_PA, Data_Structure_PA, DSnP_PA, EDA_PA, Alg_PA, Quantum_PA]
-    for cat in info:
-        bubble.append(my_skill(cat))
-
-def my_skill(cat: list):
-    # [python logo, 'Python', 'Project name', 'course', github link]
+def contact_me():
+    contact_contents = list()
+    Facebook_link = 'https://www.facebook.com/profile.php?id=100009578771776'
+    Github_link = 'https://github.com/HHHUUUGGGOOO'
+    Mail_link = 'mailto:b07901103@ntu.edu.tw'
+    info = [['Facebook', '陳孟宏', Facebook_link], ['Github', 'HHHUUUGGGOOO', Github_link], ['E-mail', 'b07901103@ntu.edu.tw', Mail_link]]
     for detail in info:
-        skill_contents.append(BoxComponent(
+        contact_contents.append(BoxComponent(
             layout='horizontal',
             padding_start='xxl',
             padding_end='xxl',
@@ -67,13 +39,13 @@ def my_skill(cat: list):
                     layout='vertical',
                     contents=[
                         TextComponent(
-                            text=cat[2],
+                            text=detail[0],
                             size='md',
                             color='#222E38',
                             weight='bold'
                         ),
                         TextComponent(
-                            text=cat[3],
+                            text=detail[1],
                             size='xs',
                             color='#6A7E8D'
                         )
@@ -87,8 +59,8 @@ def my_skill(cat: list):
                             color='#097AC5',
                             offset_bottom='md',
                             action=URIAction(
-                                label='github link',
-                                url=cat[4]
+                                label='link',
+                                url=detail[2]
                             )
                         )
                     ]
@@ -104,7 +76,7 @@ def my_skill(cat: list):
                     layout='vertical',
                     contents=[
                         ImageComponent(
-                            url=cat[0],
+                            url='https://storage.googleapis.com/cardbo-images/linebot/tutorial-setting-cover.jpg',
                             size='full',
                             aspect_mode='cover',
                             aspect_ratio='4:3',
@@ -125,7 +97,7 @@ def my_skill(cat: list):
                             padding_end='xxl',
                             contents=[
                                 TextComponent(
-                                    text=cat[1],
+                                    text='These are my contact ways！',
                                     wrap=True,
                                     color='#FFFFFF',
                                     align='center',
@@ -141,7 +113,16 @@ def my_skill(cat: list):
                     padding_top='md',
                     offset_top='none',
                     background_color='#FFFFFF',
-                    contents=skill_contents
+                    contents=contact_contents
+                ),
+                ButtonComponent(
+                    style='link',
+                    height='sm',
+                    color='#097AC5',
+                    action=URIAction(
+                        label='Mobile',
+                        url='tel:+886-966540165'
+                    )         
                 )
             ]
         )
