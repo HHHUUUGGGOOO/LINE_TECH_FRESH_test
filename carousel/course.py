@@ -23,22 +23,22 @@ from linebot.models import (
 #############################################################################
 # [[修課學期, 教授照片, 課程名稱, 教授名字, C++], ...]
 # C++
-alg = ['大三下', 'https://i.imgur.com/wB4QE0K.jpg', 'Algorithm', 'Prof. 張耀文', 'C++']
-EDA = ['大二下', 'https://i.imgur.com/Om1trmj.jpg', 'Intro of EDA', 'Prof. 江介宏', 'C++']
-DsnP = ['大二上', 'https://i.imgur.com/JySOygr.png', 'DSnP', 'Prof. 黃鍾揚', 'C++']
-CS = ['大一下', 'https://i.imgur.com/Vk2sEUc.jpg', 'Intro of Computer Science', 'Prof. 于天立', 'C++']
+alg = ['a', 'https://i.imgur.com/wB4QE0K.jpg', 'Algorithm', 'Prof. a', 'C++']
+EDA = ['a', 'https://i.imgur.com/Om1trmj.jpg', 'Intro of EDA', 'Prof. a', 'C++']
+DsnP = ['a', 'https://i.imgur.com/JySOygr.png', 'DSnP', 'Prof. a', 'C++']
+CS = ['a', 'https://i.imgur.com/Vk2sEUc.jpg', 'Intro of Computer Science', 'Prof. a', 'C++']
 
 # Python
-ML = ['預計大三下', 'https://i.imgur.com/GIskEyS.jpg', 'Machine Learning', 'Prof. 李宏毅', 'Python']
-Data_Structure = ['大三上', 'https://i.imgur.com/KulysSR.jpg', 'Data Structure', 'Prof. 顏嗣鈞', 'Python']
-Linear_Alg = ['大二上', 'https://i.imgur.com/GIskEyS.jpg', 'Linear Algebra', 'Prof. 李宏毅', 'Python']
-Programming = ['大一上', 'https://i.imgur.com/mbBpwa4.jpg', 'Computer Programming', 'Prof. 林宗男', 'Python']
+ML = ['a', 'https://i.imgur.com/GIskEyS.jpg', 'Machine Learning', 'Prof. a', 'Python']
+Data_Structure = ['a', 'https://i.imgur.com/KulysSR.jpg', 'Data Structure', 'Prof. a', 'Python']
+Linear_Alg = ['a', 'https://i.imgur.com/GIskEyS.jpg', 'Linear Algebra', 'Prof. a', 'Python']
+Programming = ['a', 'https://i.imgur.com/mbBpwa4.jpg', 'Computer Programming', 'Prof. a', 'Python']
 
 # Theoretics
-Game_Theory = ['大一下', 'https://i.imgur.com/Blwsf9z.jpg', 'Game Theory', 'Prof. 呂學一', 'Theoretics']
+Game_Theory = ['a', 'https://i.imgur.com/Blwsf9z.jpg', 'Game Theory', 'Prof. a', 'Theoretics']
 
 # NTU Presentation
-Presentation = ['大一上', 'https://i.imgur.com/AFq9HgX.jpg', 'NTU Presentation', 'Prof. 葉丙成', 'Practical']
+Presentation = ['a', 'https://i.imgur.com/AFq9HgX.jpg', 'NTU Presentation', 'Prof. a', 'Practical']
 
 data = [alg, EDA, DsnP, CS, ML, Data_Structure, Linear_Alg, Programming, Game_Theory, Presentation]
 
