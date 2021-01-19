@@ -20,7 +20,7 @@ from linebot import ( LineBotApi, WebhookHandler )
 from linebot.exceptions import ( InvalidSignatureError )
 from linebot.models import (
   MessageEvent, TextMessage, TextSendMessage, LocationMessage,
-  FollowEvent, UnfollowEvent
+  FollowEvent, UnfollowEvent, VideoSendMessage, ImageSendMessage
 )
 # files
 from token_file import token
