@@ -122,7 +122,7 @@ def contact_me():
                     color='#097AC5',
                     action=URIAction(
                         label='Mobile',
-                        url='tel:+886-966540165'
+                        uri='tel:+886-966540165'
                     )         
                 )
             ]
