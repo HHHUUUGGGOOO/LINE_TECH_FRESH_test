@@ -80,6 +80,7 @@ def my_experience(exp: list):
                             aspect_ratio='4:3',
                             gravity='center'
                         )
+                    ]
                 ),
                 BoxComponent(
                     layout='vertical',
