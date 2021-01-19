@@ -23,7 +23,7 @@ from linebot.models import (
 )
 # files
 from config import token
-from user import    User
+from user import User
 from message import text_message, follow_event_message
 
 #############################################################################
