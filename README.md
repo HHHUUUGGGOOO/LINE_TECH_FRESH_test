@@ -4,7 +4,7 @@ This line-bot is for the LINE TECH FRESH 2021 intern, which assigns me to promot
 # Used Developing Functionality
 - quick_reply
 - rich_menu
-- videosendmessage (follow event, self introduction)
+- videosendmessage / imagesendmessage (follow event, self introduction)
 - flexmessage (bubble / carousel), textsendmessage
 - account link
 

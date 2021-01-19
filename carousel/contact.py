@@ -60,7 +60,7 @@ def contact_me():
                             offset_bottom='md',
                             action=URIAction(
                                 label='link',
-                                url=detail[2]
+                                uri=detail[2]
                             )
                         )
                     ]
